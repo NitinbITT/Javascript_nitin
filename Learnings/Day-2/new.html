@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <div id="grandparent">
+        <div id="parent" style="width:100%">
+            <button id="button">click</button>
+        </div>
+    </div>
+    <script>
+        // let input=document.getElementById("input")
+        // input.addEventListener("keydown",(event)=>{
+        //     if(event.key==="Enter"){
+        //         event.preventDefault(); 
+        //         console.log(input.value);
+        //         console.log("Entered")
+        //     }
+        // })
+        let grandparent=document.getElementById("grandparent")
+        let parent=document.getElementById("parent")
+        let child=document.getElementById("button")
+
+        grandparent.addEventListener("click",()=>{
+            console.log("Clicked grandparent")
+        })
+
+        parent.addEventListener("click",()=>{
+            console.log("Clicked parent")
+        })
+
+        // child.addEventListener("click",()=>{
+        //     console.log("Clicked child")
+        // })
+    </script>
+</body>
+</html>
