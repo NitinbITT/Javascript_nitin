@@ -1,4 +1,4 @@
-import HelloWorld,{Greet,ListItems} from "./intro.jsx"
+import World from "./intro.jsx"
 export default function App(){
   return(
     <>
